@@ -54,3 +54,36 @@ echo '<pre>';
             print_r($students);
             echo '</pre>';;
 ?>
+
+<h1>country select box</h1>
+<?php
+$countries = array(
+    'AU' => 'Australia',
+    'BE' => 'Belgium',
+    'BR' => 'Brazil',
+    'CA' => 'Canada',
+    'CN' => 'China',
+    'DE' => 'Germany',
+    'FR' => 'France',
+    'GB' => 'United Kingdom',
+    'IN' => 'India',
+    'JP' => 'Japan',
+);
+$choice = 
+    '<form action="#" method="post">
+    <label for="country">Choose a country:</label>
+    <select name="country" id="country">';
+
+foreach ($countries as $iso => $countryName) {
+    $choice .= '<option value="' . $iso . '">' . $countryName . '</option>';
+}
+$choice .= 
+    '</select>
+    <input type="submit" value="Submit">
+    </form>';
+
+echo $choice;
+?>
+
+
+

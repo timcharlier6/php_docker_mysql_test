@@ -1,0 +1,25 @@
+
+<p><strong>Object-Oriented Programming (OOP)</strong></p>
+<table>
+    <thead>
+        <tr>
+            <th>Aspect</th>
+            <th>Description</th>
+            <th>Example in a Spreadsheet Application</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Paradigm Focus</td>
+            <td>Organizing code into objects that encapsulate data and behavior.</td>
+            <td>Cells, Rows, and Columns as objects with methods for calculations.</td>
+        </tr>
+        <tr>
+            <td>State Handling</td>
+            <td>Mutable state is common, and objects can modify their state.</td>
+            <td>A cell's value can be changed, and recalculations trigger updates.</td>
+        </tr>
+        <tr>
+            <td>Control Flow</td>
+            <td>Uses loops and conditionals for control flow.</td>
+            <td>Iterating over cells to perform calculations.</td></tr><tr><td>Composition vs. Inheritance</td><td>Supports inheritance for code reuse and creating class hierarchies.</td><td>Subclassing a cell to create different types of cells (e.g., FormulaCell).</td></tr><tr><td>Side Effects</td><td>Allows side effects, which can lead to potential complications when debugging.</td><td>Changing a cell's value might affect other cells' calculations.</td></tr><tr><td>Concurrency and Parallelism</td><td>May require synchronization mechanisms when dealing with concurrent access to shared mutable state.</td><td>Multiple users editing the same cell simultaneously may require synchronization.</td></tr></tbody></table><p><strong>Functional Programming (FP)</strong></p><table><thead><tr><th>Aspect</th><th>Description</th><th>Example in a Spreadsheet Application</th></tr></thead><tbody><tr><td>Paradigm Focus</td><td>Treating computation as the evaluation of mathematical functions.</td><td>Cells are treated as immutable data with pure functions for calculations.</td></tr><tr><td>State Handling</td><td>Emphasizes immutability, data is not modified; new data is created.</td><td>Cells are treated as immutable; recalculations create new cell objects.</td></tr><tr><td>Control Flow</td><td>Relies on higher-order functions like map, filter, and reduce for data manipulation.</td><td>Mapping over a range of cells to perform calculations.</td></tr><tr><td>Composition vs. Inheritance</td><td>Emphasizes composition and functional composition techniques.</td><td>Composing functions to create complex calculations.</td></tr><tr><td>Side Effects</td><td>Minimizes side effects, functions should be pure and not change external state.</td><td>Changing a cell's value does not affect other cells' calculations.</td></tr><tr><td>Concurrency and Parallelism</td><td>Easier to reason about concurrent and parallel code due to immutability and statelessness.</td><td>Concurrent calculations can be performed independently on cells.</td></tr></tbody></table><p>In a spreadsheet application, OOP might be used to model the various components of the spreadsheet, such as cells, rows, columns, and formulas. FP principles can be applied to ensure that calculations are done using pure functions and immutable data, making it easier to manage the spreadsheet's state and handle concurrent user interactions. Many modern spreadsheet applications may incorporate elements from both paradigms to strike a balance between maintainability and performance.</p>

@@ -5,4 +5,6 @@
     <li><a href="./variable/variable_types.php">Variables Types</a></li>
     <li><a href="./variable/arrays.php">Arrays</a></li>
     <li><a href="./variable/loops.php">Loops</a></li>
+    <li><a href="./variable/functions.php">Functions</a></li>
+    <li><a href="./variable/form.php">Form</a></li>
 </ul>

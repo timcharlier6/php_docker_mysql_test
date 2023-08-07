@@ -2,6 +2,27 @@
 
 declare(strict_types=1);
 
+class Beverage {
+    public $color;
+    public $price;
+    public $temperature;
+    
+    public function __construct($color, $price, $temperature) {
+        $this->color = $color;
+        $this->price = $price;
+        $this->temperature = $temperature;
+    }
+
+    public function getInfo() {
+        echo "This beverage is {$this->temperature} and {$this->color}\n";
+    }
+}
+
+$cola = new Beverage("black", 2.00, "cold");
+$cola->getInfo();
+
+
+
 /* EXERCISE 1
 TODO: Create a class beverage.
 TODO: Create the properties color (string), price (float) and temperature (string) and also foresee a construct.

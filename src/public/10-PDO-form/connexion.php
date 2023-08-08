@@ -3,8 +3,8 @@
 define("HOST", "mysql");
 define("DB", "classicmodels");
 define("PORT", "3306");
-define("LOGIN", "root");
-define("PASSWORD", "root");
+define("LOGIN", "playground-user");
+define("PASSWORD", "playground-pass1234");
 
 try {
 
